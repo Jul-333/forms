@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap");
+
+label {
+    font-family: "Roboto", "Arial", sans-serif;
+    margin-bottom: 24px;
+}
+.form label:last-of-type {
+    margin-bottom: 16px;
+}
+
+.wrapper-input {
+    position: relative;
+    margin-top: 8px;
+}
+
+.input {
+    position: relative;
+    font-family: "Roboto", "Arial", sans-serif;
+    background: #ffffff;
+    border-radius: 2px;
+    width: 100%;
+    height: 32px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 16px 8px;
+    outline: none;
+}
+.input-default {
+    border: 1px solid #ced4da;
+    color: #8a979f;
+}
+.input-default:active,
+.input-default:focus {
+    box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+    outline: 1px solid #80bdff;
+}
+
+.input-img {
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    top: 8px;
+    cursor: pointer;
+}
+.input-img-default {
+    right: 8px;
+}
+.input-img-error {
+    right: -23px;
+}
+.input-error:active,
+.input-error:focus {
+    box-shadow: none;
+    outline: 1px solid #f96d63;
+}
+.input-error {
+    border: 1px solid #f96d63;
+    border-radius: 2px;
+    color: #f96d63;
+}
+
+.arrow-error {
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    width: 146px;
+    height: 24px;
+    background: #f96d63;
+    border-radius: 2px;
+    right: 6px;
+    top: 5px;
+    display: block;
+}
+.arrow-error::after {
+    z-index: -1;
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 18px;
+    top: 3px;
+    left: -8px;
+    background: #f96d63;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}
+
+.error-small-message,
+.error-big-message {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+.error-small-message {
+    line-height: 22px;
+    margin: 0;
+    padding-left: 5px;
+    z-index: 20;
+}
+
+.error-big-message {
+    position: absolute;
+    top: 21px;
+    right: -26px;
+    z-index: 50;
+    padding: 5px;
+    line-height: 20px;
+    width: 200px;
+    min-height: 29px;
+    max-height: 72px;
+    background: #f96d63;
+    border-radius: 2px;
+    display: none;
+}
+
+.error-small-message:hover ~ .error-big-message {
+    display: block;
+}
+
+@media screen and (max-width: 560px) {
+    label {
+        margin-bottom: 19px;
+    }
+}

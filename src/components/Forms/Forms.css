@@ -1,0 +1,22 @@
+.form {
+    padding: 24px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    color: #1c1c1c;
+}
+
+.form input:disabled {
+    background: grey;
+}
+
+@media screen and (max-width: 560px) {
+    .form {
+        padding: 16px 30px 32px 22px;
+    }
+}

@@ -1,0 +1,9 @@
+.form-sign-up {
+    height: 529px;
+}
+
+@media screen and (max-width: 560px) {
+    .form-sign-up {
+        height: 496px;
+    }
+}
